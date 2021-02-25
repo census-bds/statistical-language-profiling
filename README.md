@@ -15,6 +15,10 @@ NOTE: This repo has been scrubbed in order to ensure compliance with the Census 
     3. Mean number of people in households by state
     4. Mean age by county (as calculated earlier)
 
+## How we ran these scripts
+
+To run these scripts on the Census Bureau's Integrated Research Environment (IRE), we submitted them to the IRE resource scheduler, which queues jobs until the requested resources become available. Because IRE is a shared resource, other users' behavior could affect script runtime. To minimize the effect of this interference, we submitted all jobs to the queue one at the same time on a weekday evening after normal business hours. We took the fact that jobs moved almost immediately from "queued" to "running" as an indication that our chosen window was not a high-usage time. 
+
 ## Languages
 
  - SAS
